@@ -1,0 +1,26 @@
+<h1>COUNTRESULTS</h1>
+
+<h2>Your Text:</h2>
+
+{{passedtext}}
+
+<br>
+<br>
+<br>
+<br>
+<br>
+
+
+there  are {{d_count}} words in your Text.
+<br>
+<br>
+<a href="{% url 'mypagehome' %}">Start Again</a>
+<br>
+<br>
+
+{{w_repeatC}}
+<br>
+{%  for word, cW in w_repeatC %}
+{{ word }} - {{ cW }}
+<br>
+{%  endfor %}
